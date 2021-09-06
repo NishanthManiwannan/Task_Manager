@@ -1,12 +1,12 @@
 import React from 'react'
+import Button from './Button'
 
 const Header = ({title}) => {
     return (
         <header className="header">
             {/* <h1 style={headerStyle}>{title}</h1> */}
             <h1>{title}</h1>
-            <button className="btn">Add</button>
-            
+            <Button color='red' text='Add'/>
         </header>
     )
 }
