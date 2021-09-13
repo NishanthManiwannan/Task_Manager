@@ -1,7 +1,8 @@
 import React from 'react'
 import Button from './Button'
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
+
     const onClick = (e) => {
         console.log('Clicked from header')
     }
@@ -18,7 +19,7 @@ const Header = ({title}) => {
 }
 
 Header.defaultProps = {
-    title : 'Task Manager',
+    title: 'Task Manager',
 }
 
 // ========== CSS in JS ===================
