@@ -2,7 +2,7 @@ import React from 'react'
 // import { useState } from 'react'
 import Task from './Task'
 
-const Tasks = ({ task, onDelete }) => {
+const Tasks = ({ task, onDelete, onToggle }) => {
 
   // const [task, useTask] = useState([
   //     {
@@ -13,7 +13,6 @@ const Tasks = ({ task, onDelete }) => {
   //     }
   // ] )
 
-
   return (
     <>
       {/* {task.map((task) => (
@@ -21,7 +20,7 @@ const Tasks = ({ task, onDelete }) => {
           ))}   */}
 
       {task.map((task) => (
-        <Task key={task.id} task={task} onDelete={onDelete} />
+        <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
       ))}
     </>
   )
